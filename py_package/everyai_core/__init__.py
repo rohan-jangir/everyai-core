@@ -22,7 +22,7 @@ from everyai_core.types import (
 )
 from everyai_core.tracker import UsageTracker
 
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 __author__ = "Rohan Jangir"
 
 __all__ = [
