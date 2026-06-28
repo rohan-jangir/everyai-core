@@ -55,10 +55,6 @@ const DASHBOARD_HTML = `<!DOCTYPE html>
     <!-- Top Navigation Bar -->
     <header class="border-b border-slate-800/80 bg-[#0f172a]/60 backdrop-blur-md sticky top-0 z-40 px-8 py-5 flex items-center justify-between">
         <div class="flex items-center space-x-3">
-            <!-- Sleek Tech Icon -->
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500 via-teal-400 to-emerald-500 flex items-center justify-center shadow-lg shadow-teal-500/10">
-                <span class="text-slate-900 font-extrabold text-xl font-outfit">∀</span>
-            </div>
             <div>
                 <h1 class="text-lg font-bold font-outfit tracking-tight bg-gradient-to-r from-blue-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">EveryAI Telemetry</h1>
                 <p class="text-[11px] text-slate-400 uppercase tracking-widest font-semibold">Real-time Performance & Fallback Analyzer</p>
