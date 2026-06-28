@@ -31,9 +31,10 @@ jobs:
         run: |
           npm install
 
-      - name: Publish to NPM
+      - name: Configure NPM Auth & Publish
         working-directory: js_package/everyai-core
         run: |
+          npm config set //registry.npmjs.org/:_authToken "${NODE_AUTH_TOKEN}"
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

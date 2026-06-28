@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  id-token: write
 
 jobs:
   test-build-publish:
@@ -45,5 +44,6 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          packages-dir: py_package/dist/
+          user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
+          packages-dir: py_package/dist/
