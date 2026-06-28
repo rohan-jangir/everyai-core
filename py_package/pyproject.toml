@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "everyai-core"
-version = "1.1.1"
+version = "1.1.2"
 description = "Connect to every free AI provider with zero setup"
 authors = [{name = "Rohan Jangir"}]
 readme = "README.md"
