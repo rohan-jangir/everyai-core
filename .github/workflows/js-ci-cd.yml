@@ -1,0 +1,39 @@
+name: JavaScript CI/CD (NPM Publish)
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'js_package/**'
+      - '.github/workflows/js-ci-cd.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-publish:
+    name: Build and Publish JS Package to NPM
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install Dependencies
+        working-directory: js_package/everyai-core
+        run: |
+          npm install
+
+      - name: Publish to NPM
+        working-directory: js_package/everyai-core
+        run: |
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

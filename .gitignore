@@ -1,0 +1,31 @@
+# Environment secrets & API Keys (CRITICAL: NEVER COMMIT TO GITHUB!)
+.env
+.env.*
+*.env
+secrets.json
+
+# Local telemetry databases and caches
+*.db
+.everyai/
+
+# Python Build, Distribution & Cache Artifacts
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+**/*.egg-info/
+**/dist/
+**/build/
+.pytest_cache/
+.coverage
+
+# JavaScript Dependencies, Archives & Lock Artifacts
+**/node_modules/
+*.zip
+*.tar.gz
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

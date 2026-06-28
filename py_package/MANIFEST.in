@@ -1,0 +1,19 @@
+# Include license and readme
+include LICENSE
+include README.md
+include MODULES.md
+
+# Exclude secrets and local databases
+exclude .env
+exclude .env.*
+global-exclude *.db
+global-exclude *.pyc
+global-exclude __pycache__/*
+
+# Exclude temporary verification and simulation scripts
+exclude verify_*.py
+exclude check_*.py
+
+# Exclude test suites and cache from the final package
+prune tests
+prune .pytest_cache

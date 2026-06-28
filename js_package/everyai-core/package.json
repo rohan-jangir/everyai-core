@@ -1,0 +1,28 @@
+{
+  "name": "everyai-core",
+  "version": "1.1.1",
+  "description": "Connect to every free AI provider with zero setup",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "everyai": "./src/cli.js"
+  },
+  "author": "Rohan Jangir <rohanjangir19@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "llm",
+    "groq",
+    "openrouter",
+    "huggingface",
+    "cerebras",
+    "mistral",
+    "cloudflare",
+    "nvidia",
+    "fallback",
+    "caching",
+    "rate-limiting",
+    "telemetry"
+  ],
+  "dependencies": {}
+}
